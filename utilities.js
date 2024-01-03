@@ -74,7 +74,7 @@ const deleteAdd = (num, change) => {
     switch (change) {
         case 0:
             if (num < itemList.length) {
-                if (buyingList.includes(itemList[num])) {
+                if (buyingList.indexOf(itemList[num]) !== -1) {
                     buyingList[buyingList.indexOf(itemList[num])].num++;
                 }    
                 else {            
@@ -84,7 +84,7 @@ const deleteAdd = (num, change) => {
             break;
         case 1:
             if (num < buyingList.length) {
-                if (buyingList[num].num == 0) {
+                if (buyingList[num].num === 0) {
                     buyingList.splice(num, 1);
                 }
                 else {
