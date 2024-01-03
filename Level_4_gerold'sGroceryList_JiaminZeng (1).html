@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>GEROLD'S GROCERY DAY</title>
+    <link rel = "stylesheet", href = "css sheet.css" />
+    <script src = "utilities.js"></script>
+    </head>
+    <body onload = "initialize();">
+        <h1>What Gerold Might Need...</h1>
+        <div>
+            <div class = "scroll", id = "listbox"></div>
+        </div>
+
+        <label>
+            Selection: <input type = "text",  id = "itemsel" />
+            <button onclick = "deleteAdd(itemSelectionBox.value, 0);">ADD</button>
+        </label>
+
+        <hr />
+        <h1>What Gerold Will Buy...</h1>
+        <div>
+            <div class = "scroll", id = "outbox"></div>
+        </div>
+       
+        <label>
+            Item to change: <input name = "item", type = "text", id = "changeitem" />
+            <button onclick = "changeItem(parseInt(changeItemBox.value), 0)">UP</button>
+            <button onclick = "changeItem(parseInt(changeItemBox.value), 1)">DOWN</button>
+            <button onclick = "deleteAdd(changeItemBox.value, 1)">DELETE</button>
+        </label>
+        </br>
+    </body>
+</html>
