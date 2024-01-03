@@ -25,7 +25,7 @@ function initialize() {
     new Item ("Medulla", "A part of your brainstem. Regulates heartbeat, breathing, and vomiting.", ""),
     new Item ("Anterior thyroid", "Secretes hormones TC3 and TC4.", ""),
     new Item ("Greatsword (pink)", "It's a pink greatsword.", ""),
-    new Item ("Pancreas", "", ""),
+    new Item ("Pancreas", "Responsible for producing enzymes to digest food.", ""),
     new Item ("Panacea", "Cures all ailments and curses.", ""),
     new Item ("Amygdala", "A part of your limbic system. Responsible for your fight-or-flight response.", ""),
     new Item ("Pons", "A part of your brainstem. Responsible for relaying info to different parts of your brain.", ""),
@@ -104,11 +104,12 @@ const changeItem = (num, change) => {
         return;
     }
 
-    if (prevItem !== undefined && prevIdx !== undefined && num !== prevIdx) {
-        prevIdx = num;
-    } else {
+    if (prevItem === undefined || prevIdx === undefined || num !== prevIdx) {
         prevItem = buyingList[num];
         prevIdx = num;
+    }
+    else if (num === prevIdx) {
+        num = buyingList.indexOf(prevItem);
     }
 
     const swapIndex = change === 0 ? num - 1 : change === 1 ? num + 1 : undefined;
@@ -117,5 +118,6 @@ const changeItem = (num, change) => {
         [buyingList[num], buyingList[swapIndex]] = [buyingList[swapIndex], prevItem];
     }
     
+    console.log(prevItem.name)
     display();
 }

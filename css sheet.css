@@ -1,20 +1,21 @@
 body {
-    text-align: center;
     font: 18pt;
     background-color: #000000;
 }
 
-button, h1, .scroll, body, form, label {
+button, h1, .scroll, body, label {
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
 }
 
-form, label {
+label, h1 {
     font-size: 26px;
+    text-align: left;
 }
 
-h1 {
-    text-align: center;
+hr {
+    width: 50%;
+    margin: 0;
 }
 
 button {
