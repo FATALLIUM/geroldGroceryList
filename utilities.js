@@ -117,7 +117,5 @@ const changeItem = (num, change) => {
     if (swapIndex !== undefined && swapIndex >= 0 && swapIndex < buyingList.length) {
         [buyingList[num], buyingList[swapIndex]] = [buyingList[swapIndex], prevItem];
     }
-    
-    console.log(prevItem.name)
     display();
 }
