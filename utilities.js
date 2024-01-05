@@ -22,21 +22,21 @@ function initialize() {
 
     // initialize item list (what is available to buy)
     itemList = [new Item("Sword of Cheese and Ants", "A sword that was wielded by cheese ants.", ""),
-    new Item ("Medulla", "A part of your brainstem. Regulates heartbeat, breathing, and vomiting.", ""),
-    new Item ("Anterior thyroid", "Secretes hormones TC3 and TC4.", ""),
-    new Item ("Greatsword (pink)", "It's a pink greatsword.", ""),
-    new Item ("Pancreas", "Responsible for producing enzymes to digest food.", ""),
+    new Item ("Someone's medulla", "A part of your brainstem. Regulates heartbeat, breathing, and vomiting.", ""),
+    new Item ("Thyroid gland", "Secretes hormones TC3 and TC4.", ""),
+    new Item ("Greatsword (purple)", "It's a purple greatsword.", ""),
+    new Item ("Keys", "No one knows what these keys unlock.", ""),
     new Item ("Panacea", "Cures all ailments and curses.", ""),
     new Item ("Amygdala", "A part of your limbic system. Responsible for your fight-or-flight response.", ""),
-    new Item ("Pons", "A part of your brainstem. Responsible for relaying info to different parts of your brain.", ""),
-    new Item ("Wernicke's Area", "Located in the cerebral cortex. Responsible for understanding and interpreting speech.", ""),
-    new Item ("Hair (edible)", "If ingested, you might raise your stats.", ""),
+    new Item ("Moss", "Found in a prison.", ""),
+    new Item ("Shade Jacket", "You can dash through enemies with this.", ""),
+    new Item ("Hair (edible)", "If ingested, it might raise your stats.", ""),
     new Item ("Pom", "A pom of power.", ""),
-    new Item ("Beast Eye", "A murky violet iris.", ""),
+    new Item ("Beast Eye", "A murky violet iris. Probably inedible.", ""),
     new Item ("Chair", "It's a chair.", ""),
     new Item ("Edible Chair", "You can eat this one.", ""),
-    new Item ("Someone's Somatosensory Cortex", "Detects sensory information, e.g. touch, temperature, pain.", ""),
-    new Item ("Someone's Left Hemisphere", "Responsible for speech, writing, and comprehension.", ""),
+    new Item (".2246 lead", "What's with the precision?", ""),
+    new Item ("Feathered hat", "This hat can shoot bullets(?).", ""),
     new Item ("Dark matter (pre-packaged)", "Does not emit or reflect light. Our universe is composed of 27% dark matter.", ""),
     new Item ("Pulsar", "A neutron star that emits radiation from its magnetic poles.", ""),
     new Item ("Milk", "Someone's dad left it here.", "")
@@ -68,7 +68,7 @@ const display = () => {
 
 // finished
 const deleteAdd = (num, change) => {
-    if (num === "" || num < 0) {
+    if (isNaN(num) || num < 0) {
         return;
     }
     switch (change) {
