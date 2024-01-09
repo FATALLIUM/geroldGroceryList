@@ -36,7 +36,7 @@ function initialize() {
     new Item ("Amygdala", "A part of your limbic system. Responsible for your fight-or-flight response.", "amygdala.png"),
     new Item ("Moss", "Found in a prison.", "moss.png"),
     new Item ("Shade Jacket", "You can dash through enemies with this.", "shadeJacket.png"),
-    new Item ("Hair (edible)", "If ingested, it might raise your stats.", "hat.png"), // sub
+    new Item ("Hair (edible)", "If ingested, it might raise your stats.", "hat.png"),
     new Item ("Pom", "A pom of power.", "pom.png"),
     new Item ("Beast Eye", "A murky violet iris. Probably inedible.", "beastEye.png"),
     new Item ("Chair", "It's a chair.", "chair.png"),
@@ -44,7 +44,7 @@ function initialize() {
     new Item (".2246 lead", "What's with the precision?", "lead.png"),
     new Item ("Feathered hat", "This hat can shoot bullets(?).", "hat.png"),
     new Item ("Dark matter (pre-packaged)", "Does not emit or reflect light. Our universe is composed of 27% dark matter.", "darkMatter.png"),
-    new Item ("Pulsar", "A neutron star that emits radiation from its magnetic poles.", "hat.png"), // sub
+    new Item ("Pulsar", "A neutron star that emits radiation from its magnetic poles.", "pulsar.png"),
     new Item ("Milk", "Someone's dad left it here.", "")
     ];
 
