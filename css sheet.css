@@ -23,6 +23,18 @@ button {
     font-size: 31px;
 }
 
+.item {
+    font-size: 18pt;
+    text-align: right;
+}
+
+img {
+    float: right;
+    padding: 170px;
+    padding-top: 90px;
+    /* padding-bottom: 50vh; */
+
+}
 
 .button:hover {
     background-color: darkred;
@@ -39,12 +51,3 @@ button {
     text-align: justify;
     padding: 20px;
 }
-
-/* .hovered {
-    display: none;
-}
-
-.test:hover + .hovered {
-    display: block;
-    color:green;
-} */

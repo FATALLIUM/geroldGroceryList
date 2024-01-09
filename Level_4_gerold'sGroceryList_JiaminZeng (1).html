@@ -7,6 +7,8 @@
     </head>
     <body onload = "initialize();">
         <h1>What Gerold Might Need...</h1>
+        <img id = "itemimg">
+
         <div>
             <div class = "scroll", id = "listbox"></div>
         </div>
@@ -21,7 +23,9 @@
         <div>
             <div class = "scroll", id = "outbox"></div>
         </div>
-       
+        
+        <div class = "item", id = "itemdesc"></div>
+
         <label>
             Item to change: <input name = "item", type = "text", id = "changeitem" />
             <button onclick = "changeItem(parseInt(changeItemBox.value), 0)">UP</button>
