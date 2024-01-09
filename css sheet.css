@@ -26,14 +26,13 @@ button {
 .item {
     font-size: 18pt;
     text-align: right;
+    padding: 40px;
 }
 
 img {
     float: right;
-    padding: 170px;
-    padding-top: 90px;
-    /* padding-bottom: 50vh; */
-
+    padding: 100px;
+    padding-top: 10px;
 }
 
 .button:hover {
